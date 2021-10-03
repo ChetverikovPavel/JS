@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="task_4_script.js" type="text/javascript"></script>
+    <script>
+        'use strict'
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'сложение':
+                    return getAdd(arg1, arg2);
+                case 'вычитание':
+                    return getSub(arg1, arg2);
+                case 'умножение':
+                    return getMul(arg1, arg2);
+                case 'деление':
+                    return getDiv(arg1, arg2);
+            }
+        }
+
+        let a = Number(prompt('Введите первое число'));
+        let b = Number(prompt('Введите второе число'));
+        let insOperation = prompt('Введите операцию');
+
+        alert(mathOperation(a, b, insOperation));
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
